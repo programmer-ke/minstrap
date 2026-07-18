@@ -31,12 +31,12 @@
 
 ## Phase 5: Responsive Span Classes
 
-- [ ] Add `.sm-1` through `.sm-12` and `.sm-auto` (media query 576px)
-- [ ] Add `.md-*` (768px)
-- [ ] Add `.lg-*` (992px)
-- [ ] Add `.xl-*` (1200px)
-- [ ] Add `.xxl-*` (1400px)
-- [ ] **Visual test:** Columns that change layout at breakpoints (e.g., `.span-12 .md-6 .lg-4`)
+- [x] Add `.sm-1` through `.sm-12` and `.sm-auto` (media query 576px)
+- [x] Add `.md-*` (768px)
+- [x] Add `.lg-*` (992px)
+- [x] Add `.xl-*` (1200px)
+- [x] Add `.xxl-*` (1400px)
+- [x] **Visual test:** Columns that change layout at breakpoints (e.g., `.span-12 .md-6 .lg-4`)
 
 ## Phase 6: Nesting
 
