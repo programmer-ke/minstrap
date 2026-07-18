@@ -40,11 +40,11 @@
 
 ## Phase 6: Nesting
 
-- [ ] Verify nested rows inside columns work (negative margins cancel padding)
-- [ ] **Visual test:** Nested grid with inner row of 2 columns
+- [x] Verify nested rows inside columns work (negative margins cancel padding)
+- [x] **Visual test:** Nested grid with inner row of 2 columns
 
 ## Phase 7: Edge Cases & Polish
 
-- [ ] Test all breakpoints together for conflicts
-- [ ] Test `.span-auto` and responsive auto variants
-- [ ] **Final visual test:** Complex layout exercising all features, resize browser
+- [x] Test all breakpoints together for conflicts
+- [x] Test `.span-auto` and responsive auto variants
+- [x] **Final visual test:** Complex layout exercising all features, resize browser
