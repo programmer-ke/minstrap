@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title> Title </title>
+    <title> minstrap tutorial </title>
 
     <meta charset='utf-8'>
     <meta name="description" content="Description of page">
@@ -16,18 +16,162 @@
     <link rel="manifest" href="/site.webmanifest">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 
+    <style type="text/css">
+      ms-row {
+	  border: 1px solid forestgreen;
+      }
+
+      ms-column {
+	  background: lightblue;
+	  background-clip: content-box;
+      }
+    </style>
+
   </head>
 
   <body>
 
+    <h1> Minimal CSS grid layout system inspired by Bootstrap </h1>
+
+    <p> The layout below is the default layout. An <b>ms-container</b> with
+      a set max-width at each responsive breakpoint. Inside it is a
+      <b>ms-row</b> with three <b>ms-column</b> of equal sizes
+      and left/right gutters.  <br/> For illustration, each row has a green
+      border, and each column has light blue background showing its
+      content box.
+    </p>
+
     <ms-container>
       <ms-row>
-	<ms-column> col 1 - some text </ms-column>
+	<ms-column> col 1 </ms-column>
 	<ms-column> col 2 </ms-column>
 	<ms-column> col 3 </ms-column>
+      </ms-row>
 
+    </ms-container>
+
+    <p> 
+      There are 12 template columns per row. For each column, we can
+      specify how may template columns it spans by adding
+      a <b>span-{num}</b> from <b>span-1</b> to <b>span-12</b>.  <br/>
+      Below, we have 3 columns with <b>span-4</b>, <b>span-6</b>
+      and <b>span-2</b> classes
+    </p>
+
+
+    <ms-container>
+
+      <ms-row>
+	<ms-column class="span-4"> 4 </ms-column>
+	<ms-column class="span-6"> 6 </ms-column>
+	<ms-column class="span-2"> 2 </ms-column>
+      </ms-row>
+
+    </ms-container>
+
+    <p>
+      The <b>span-*</b> classes by default work across all the responsive breakpoints from
+      xs to xxl. <br/>
+
+      When we want override the number of template columns to span per responsive breakpoint
+      we can use the <b>sm-*</b> to <b>xxl-*</b> classes. <br/>
+
+      In the first row below, each column has the following classes
+
+      <code> span-12 sm-6 md-4 lg-3 xl-2 </code> and will set the
+      appropriate span size at each breakpoint. <br/>
+
+      We can specify the <b>span-auto</b> class to make a column fit its content, as seen in the
+      second row.
+    </p>
+    
+    <ms-container>
+
+      <ms-row>
+	<ms-column class="span-12 sm-6 md-4 lg-3 xl-2"> span-12 </ms-column>
+	<ms-column class="span-12 sm-6 md-4 lg-3 xl-2"> span-12 </ms-column>
+	<ms-column class="span-12 sm-6 md-4 lg-3 xl-2"> span-12 </ms-column>
+	<ms-column class="span-12 sm-6 md-4 lg-3 xl-2"> span-12 </ms-column>
+	<ms-column class="span-12 sm-6 md-4 lg-3 xl-2"> span-12 </ms-column>
+      </ms-row>
+
+      <ms-row>
+	<ms-column class="span-auto"> span-auto (fits content) </ms-column>
+      </ms-row>
+      
+    </ms-container>
+
+    <p>
+      We can set the <b>fluid</b> class on a <b>ms-container</b> to make it occupy full width:
+    </p>
+
+    <ms-container class="fluid">
+      <ms-row>
+	<ms-column > fluid container </ms-column>
       </ms-row>
     </ms-container>
+
+    <p>
+      We can override left/right gutter sizes for each row using the classes
+      <b>g-0</b> to <b>g-5</b> as seen below:
+    </p>
     
+    <ms-container>
+      <ms-row class="g-0">
+	<ms-column> col 1 g-0 </ms-column>
+	<ms-column> col 2 g-0 </ms-column>
+	<ms-column> col 3 g-0 </ms-column>
+      </ms-row>
+
+      <ms-row class="g-1">
+	<ms-column> col 1 g-1 </ms-column>
+	<ms-column> col 2 g-1 </ms-column>
+	<ms-column> col 3 g-1 </ms-column>
+      </ms-row>
+      
+      <ms-row class="g-2">
+	<ms-column> col 1 g-2 </ms-column>
+	<ms-column> col 2 g-2 </ms-column>
+	<ms-column> col 3 g-2 </ms-column>
+      </ms-row>
+
+
+      <ms-row class="g-3">
+	<ms-column> col 1 g-3 </ms-column>
+	<ms-column> col 2 g-3 </ms-column>
+	<ms-column> col 3 g-3 </ms-column>
+      </ms-row>
+
+      <ms-row class="g-4">
+	<ms-column> col 1 g-4 </ms-column>
+	<ms-column> col 2 g-4 </ms-column>
+	<ms-column> col 3 g-4 </ms-column>
+      </ms-row>
+
+      <ms-row class="g-5">
+	<ms-column> col 1 g-5 </ms-column>
+	<ms-column> col 2 g-5 </ms-column>
+	<ms-column> col 3 g-5 </ms-column>
+      </ms-row>
+    </ms-container>
+
+    <p>
+      We can also nest a row within a column. In the following example,
+      the second column has a nested row with two columns
+    </p>
+
+    <ms-container>
+      <ms-row>
+	<ms-column> top level col </ms-column>
+	<ms-column>
+	  <ms-row>
+	    <ms-column> inner col 1</ms-column>
+	    <ms-column> inner col 2</ms-column>
+	  </ms-row>
+	</ms-column>
+      </ms-row>
+      
+    </ms-container>
+
   </body>
 </html>
