@@ -17,8 +17,7 @@ Inspired by Bootstrap.
   `.xxl-*` override the base span at each breakpoint.
 - Container max widths: container snaps to fixed widths at each
   breakpoint; `.fluid` for full‑width containers.
-- Gutter modifiers: `.g-0` through `.g-5` on rows to adjust horizontal
-  and vertical spacing.
+- Gutter modifiers: `.g-0` through `.g-5` on rows to adjust horizontal spacing.
 - Nesting: rows can be placed inside columns for complex layouts.
 - CSS custom properties: easily override gutter sizes, column count,
   and breakpoint widths.

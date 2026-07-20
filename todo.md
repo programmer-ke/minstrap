@@ -26,7 +26,7 @@
 
 ## Phase 4: Gutter Modifiers
 
-- [x] Add `.g-0` through `.g-5` classes on `<ms-row>` (set both gutter vars)
+- [x] Add `.g-0` through `.g-5` classes on `<ms-row>` (set horizontal gutter vars)
 - [x] **Visual test:** Rows with different gutter classes (g-0, g-2, g-5)
 
 ## Phase 5: Responsive Span Classes
