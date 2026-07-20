@@ -7,7 +7,7 @@ Inspired by Bootstrap.
 
 ## Features
 
-- Custom elements: `ms-container`, `ms-row`, `ms-columns`. No classes
+- Custom elements: `ms-container`, `ms-row`, `ms-column`. No classes
   required layouts
 - 12-column grid: `.span-1` to `.span-12`, plus `.span-auto` for
   content-sized columns
